@@ -1,0 +1,63 @@
+@charset "UTF-8";
+body {
+    font-family: Helvetica Neue, Helvetica, PingFang SC, 微软雅黑, Tahoma, Arial, sans-serif;
+    min-width: 1000px;
+    background: rgb(207, 123, 111);
+}
+article, aside, blockquote, body, button, dd, div, dl, dt, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hr, input, legend, li, menu, nav, ol, p, pre, section, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    &:hover,
+    &:focus {
+        color: $brand-primary;
+        text-decoration: none;
+    }
+}
+
+.tc{
+    text-align: center !important;
+}
+.tl{
+    text-align: left !important;
+}
+.tr{
+    text-align: right !important;
+}
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+.clearfix:after{
+	content:"";
+	clear:both;
+	display:block;
+	visibility:hidden;
+	height:0
+}
+.clearfix{
+	   zoom:1;
+ }
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.hide {
+    display: none !important;
+}
+.min-w{
+    min-width: 1000px;
+}
+.fff{
+    color: #fff;
+}

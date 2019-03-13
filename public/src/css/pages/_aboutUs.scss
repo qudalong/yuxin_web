@@ -1,0 +1,267 @@
+@charset "UTF-8";
+.us-banner {
+    text-align: center;
+    color: #FFFFFF;
+    position: relative; 
+    .title {
+        width: 100%;  
+        position: absolute;
+        top: 50px;
+        left: 0;
+        font-size: 36px;
+    }
+}
+
+.course {
+    margin: 30px auto;
+    display: block;
+}
+
+.wrap {
+    width: 1000px;
+    margin: 30px auto;
+    h2 {
+        font-weight: normal;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    p {
+        line-height: 1.8;
+        text-align: justify;
+        color: #333;
+        margin-bottom: 30px;
+    }
+    .we-who {
+        width: 580px;
+        float: left;
+    }
+    .about-tyxy {
+        width: 400px;
+        float: left;
+    }
+    .img-wrap {
+        width: 400px;
+        height: 380px;
+        margin-top: 30px;
+        float: left;
+        .item {
+            position: relative;
+            .hook {
+                position: absolute;
+                left: 10px;
+                top: 0px;
+                padding: 5px 20px;
+                display: inline-block;
+                box-shadow: 1px 1px 3px #ccc, -1px -1px 3px #ccc;
+                border-radius: 20px;
+                background: #fff;
+                font-size: 14px;
+                z-index: 2;
+                .triangle {
+                    width: 0px;
+                    height: 0px;
+                    *width: 30px;
+                    *height: 30px;
+                    font-size: 0;
+                    line-height: 0;
+                    overflow: hidden;
+                    border-width: 12px;
+                    border-style: solid dashed dashed dashed;
+                    border-color: #fff transparent transparent transparent;
+                    position: absolute;
+                    left: 50px;
+                    top: 26px;
+                    z-index: 1;
+                }
+            }
+            &:hover {
+                .hook {
+                    display: inline-block !important;
+                }
+            }
+        }
+        img {
+            position: absolute;
+            cursor: pointer;
+        }
+        .img1 {
+            top: 0;
+            left: 102px;
+        }
+        .img2 {
+            top: 0;
+            left: 229px;
+        }
+        .img3 {
+            top: 111px;
+            left: 40px;
+        }
+        .img4 {
+            top: 110px;
+            left: 165px;
+        }
+        .img5 {
+            top: 220px;
+            left: 103px;
+        }
+        .img6 {
+            top: 220px;
+            left: 229px;
+        }
+        .outer {
+            width: 140px;
+            height: 140px;
+            position: relative;
+            padding: 10px;
+            background: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            .hook {
+                position: absolute;
+                left: 10px;
+                top: 0px;
+                padding: 5px 12px;
+                display: none;
+                box-shadow: 1px 1px 3px #ccc, -1px -1px 3px #ccc;
+                border-radius: 20px;
+                background: #fff;
+                font-size: 14px;
+                z-index: 2;
+                .triangle {
+                    width: 0px;
+                    height: 0px;
+                    *width: 30px;
+                    *height: 30px;
+                    font-size: 0;
+                    line-height: 0;
+                    overflow: hidden;
+                    border-width: 12px;
+                    border-style: solid dashed dashed dashed;
+                    border-color: #fff transparent transparent transparent;
+                    position: absolute;
+                    left: 50px;
+                    bottom: -22px;
+                    z-index: 1;
+                }
+            }
+            .inner {
+                transition: all .5s;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 140px;
+                height: 140px;
+                line-height: 140px;
+                text-align: center;
+                border-radius: 50%;
+                animation: mymove 3s linear 1s infinite alternate;
+            }
+            @keyframes mymove {
+                0% {
+                    height: 36px;
+                    width: 36px;
+                    line-height: 36px;
+                }
+                25% {
+                    height: 56px; 
+                    width: 56px;
+                    line-height: 56px;
+                }
+                50% {
+                    height: 84px;
+                    width: 84px;
+                    line-height: 84px;
+                }
+                75% {
+                    height: 112px;
+                    width: 112px;
+                    line-height: 112px;
+                }
+                100% {
+                    height: 140px;
+                    width: 140px;
+                    line-height: 140px;
+                }
+            }
+            .inner1 {
+                background: #F1C2C2;
+            }
+            .inner2 {
+                background: #97C858;
+            }
+            .inner3 {
+                background: #BFD9ED;
+            }
+            &:hover {
+                .hook {
+                    display: inline-block;
+                }
+            }
+        }
+        .outer1 {
+            border: 2px solid #F1C2C2;
+            top: 0;
+            left: 41%;
+            transform: translateX(-50%);
+        }
+        .outer2 {
+            border: 2px solid #97C858;
+            top: -17px;
+            left: -30px;
+        }
+        .outer3 {
+            border: 2px solid #BFD9ED;
+            top: -180px;
+            left: 188px;
+        }
+    }
+    .img-wrap2 {
+        width: 580px;
+    }
+}
+
+.yaya-head {
+    float: left;
+    width: 340px;
+}
+
+.yaya-info {
+    float: left;
+    width: 630px;
+    padding-left: 30px;
+    .change-btn {
+        margin: 10px 0 20px;
+        .btn {
+            color: #FFFFFF;
+            padding: 8px 15px;
+            border-radius: 20px;
+            background: $brand-primary;
+            margin-right: 30px;
+            cursor: pointer;
+            &.meimei {
+                background: #EB8EA6;
+            }
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    .item-info {
+        p {
+            margin-bottom: 12px;
+        }
+        .info {
+            margin-bottom: 10px;
+            .item {
+                display: inline-block;
+                min-width: 116px;
+                padding-left: 20px;
+                background: url(/dist/img/aboutUs/label.png) left center no-repeat;
+            }
+        }
+        img {
+            margin-top: 10px;
+        }
+    }
+}

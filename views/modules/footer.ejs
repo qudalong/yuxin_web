@@ -1,0 +1,102 @@
+<footer>
+	<!--申请使用开始-->
+	<div class="apply">
+		<div class="w apply_w">
+			<div class="use">
+				<div class="use_1">
+					<span class="h4">申请使用</span>&nbsp;<span>请填写信息，童忆园期待与您携手共创家园共育美好未来</span>
+					<p>专属客服将在<strong>24</strong>小时内与您联系，快速开通客服电话：<strong>0371-65715652</strong></p>
+				</div>
+				<div class="use_2">
+					<input type="text" placeholder="学校名称(必填)" /><br />
+					<input type="text" placeholder="您的手机号(必填)" />&nbsp;&nbsp;
+					<input type="text" placeholder="您的姓名(必填)" /><br />
+				</div>
+				<div class="use_3">
+					<p>请选择您的身份</p>
+					<div class="line">
+						<span class="active">园长</span><span>投资人</span><span>代理商</span><span>其他</span>
+					</div>
+					<p>请选择您的学校规模</p>
+					<div class="line">
+						<span class="active">单园</span><span>集团连锁园</span>
+					</div>
+				</div>
+				<div class="use_4">提交申请</div>
+			</div>
+		</div>
+	</div>
+	<!--申请使用结束-->
+
+	<!--关注联系下载开始-->
+	<div class="about">
+		<div class="w about_w">
+			<ul class="fl attention">
+				<li>
+					<p>关注我们</p>
+				</li>
+				<li>
+					<a href="https://www.toutiao.com/c/user/50559664854/#mid=50567816753" target="_blank">今日头条</a>
+				</li>
+				<li>
+					<a href="http://mp.sohu.com/profile?xpt=cHBhZzM3NTc3ZDA2NDAxYUBzb2h1LmNvbQ==&_f=index_pagemp_2&spm=smpc.content.author.3.154649727209895bt9et" target="_blank">搜狐公众平台</a>
+				</li>
+				<li>
+					<a href="https://weibo.com/p/1005056152207643/home?from=page_100505_profile&wvr=6&mod=data&is_hot=1#place" target="_blank">新浪微博</a>
+				</li>
+			</ul>
+			<ul class="fl relation">
+				<li>
+					<p>联系我们</p>
+				</li>
+				<li>
+					<p><span>客服热线:</span>&nbsp;&nbsp;<span class="num">0371-65715652</span></p>
+				</li>
+				<li>
+					<p><span>客服QQ:</span>&nbsp;&nbsp;<span class="num">2483711488</span></p>
+				</li>
+				<li>
+					<p>9:00-20:30(周一至周五)</p>
+				</li>
+			</ul>
+
+			<div class="fr concern">
+				<i></i><span>扫码关注公众号</span>
+			</div>
+			<div class="fr download">
+				<i></i><span>下载童忆园APP</span>
+			</div>
+		</div>
+	</div>
+	<!--关注联系下载结束-->
+
+	<!--版权开始-->
+	<div class="copyright">
+		<div class="copyright_p">
+			<p>河南宇信通讯科技有限公司</p>
+			<p>Copyrightitongyiyuan.com.All rights reserved|豫B2-20060015-11号</p>
+		</div>
+	</div>
+	<!--版权结束-->
+</footer>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		//导航链接跳转
+		$('.head-wrap .nav a').each(function() {
+			if($($(this))[0].href == String(window.location))
+				$(this).addClass('active').attr('href', 'javascript:void(0);');
+				$('.head-wrap .nav .help').css("color","#000000");
+		});
+		$('.product-nav  a').each(function() {
+			if($($(this))[0].href == String(window.location))
+				$(this).addClass('active').attr('href', 'javascript:void(0);');
+				$('.head-wrap .nav .product').addClass('active').attr('href', 'javascript:void(0);');
+		});
+		
+		//选择信息
+		$(".line span").on("click",function(){
+			$(this).addClass("active").siblings().removeClass("active");
+		})
+	})
+</script>

@@ -1,0 +1,255 @@
+@charset "UTF-8";
+.h2 {
+    margin: 30px 0 10px 0;
+    font-weight: normal;
+    text-align: center;
+    font-size: 32px;
+}
+
+.p-text {
+    text-align: center;
+    line-height: 2;
+}
+
+.introduce-wrap {
+    text-align: center;
+    background: url(/dist/img/index/home_zhihuixiaoyuan.png) no-repeat center;
+    background-size: contain;
+    .info-list {
+        width: 700px;
+        margin: 30px auto 0;
+        .item {
+            position: relative;
+            box-shadow: 1px 1px 10px #ccc;
+            border-radius: 4px;
+            margin-right: 20px;
+            float: left;
+            text-align: center;
+            background: #fff;
+            cursor: pointer;
+            padding-top:10px; 
+            &:last-of-type {
+                margin-right: 0;
+            }
+            .icon {
+                width: 220px;
+                height: 180px;
+                cursor: pointer;
+                transition: all .3s;
+            }
+            .icon-puter {
+                background: url(/dist/img/index/home_icon_Digital_campus.png) no-repeat center;
+                background-size: 93px 80px;
+            }
+            .icon-pake {
+                background: url(/dist/img/index/home_icon_Knowledge_Campus.png) no-repeat center;
+                background-size: 95px 80px;
+            }
+            .icon-r {
+                background: url(/dist/img/index/home_icon_Brand_campus.png) no-repeat center;
+                background-size: 79px 79px;
+            }
+            &:hover {
+                border-radius: 4px 4px 0 0;
+                box-shadow: 0 1px 10px #ccc;
+                .icon-puter {
+                    background: url(/dist/img/index/home_icon_Digital_campus_little.png) no-repeat top center;
+                }
+                .icon-pake {
+                    background: url(/dist/img/index/home_icon_Knowledge_Campus_little.png) no-repeat top center;
+                }
+                .icon-r {
+                    background: url(/dist/img/index/home_icon_Brand_campus_little.png) no-repeat top center;
+                }
+                .hide-wrap {
+                    top: 70px;
+                    height: 162px;
+                    display: block
+                }
+                .title {
+                    display: none;
+                }
+            }
+            .title {
+                padding: 20px 0;
+                border-top: 1px solid #f0f0f0;
+            }
+            .hide-wrap {
+                position: absolute;
+                left: 0;
+                bottom: -174px;
+                border-radius: 0 0 4px 4px;
+                padding: 10px 0;
+                width: 220px;
+                height: 152px;
+                background: $brand-primary;
+                color: #fff;
+                box-shadow: 0 4px 10px #999;
+                transition: all .4s;
+                display: none;
+                overflow: hidden;
+                font-size: 14px;
+                h3 {
+                    font-weight: normal;
+                }
+                .details {
+                    padding: 12px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+.service-wrap {
+    text-align: center;
+    color: #fff;
+    padding: 60px 0;
+    background: url(/dist/img/index/home_bg_services.png) no-repeat center;
+    background-size: cover;
+    .service-list {
+        width: fit-content;
+        padding: 20px 0;
+        margin: 20px auto;
+        .item {
+            float: left;
+            display: inline;
+            margin-right: 34px;
+            transition: all .5s;
+            cursor: pointer;
+            img {
+                margin-bottom: 10px;
+            }
+            &:hover{
+                transform: scale(1.4);
+            }
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.mission-wrap {
+    color: #fff;
+    padding: 140px 0 160px;
+    background: url(/dist/img/index/home_bg_mission.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.scroll-wrap {
+    width: 840px;
+    margin: 80px auto;
+}
+
+//轮播图
+.banner1 {
+    position: relative;
+   height: 667px !important;
+}
+
+.banner {
+    position: relative;
+    overflow: auto;
+    text-align: center;
+}
+
+.banner li {
+    list-style: none;
+}
+
+.banner ul li {
+    position: relative;
+    float: left;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+.banner .dots li {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+
+.banner .dots li.active {
+    background: #fff;
+    opacity: 1;
+}
+
+.unslider {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.unslider-l {
+    left: 50px !important;
+}
+
+.unslider-r {
+    right: 50px !important;
+}
+
+.unslider-arrow {
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+    line-height: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+//老师轮播
+.scroll-wrap {
+    .infos {
+        float: left;
+        margin-left: 70px;
+        width: 560px;
+        text-align: left;
+        line-height: 1.6;
+        .headmaster {
+            font-weight: bold;
+            text-align: right;
+            line-height: 1.6;
+        }
+        .school-name {
+            @extend .headmaster;
+        }
+    }
+    .head-img {
+        float: left;
+        border-radius: 50%;
+        margin: 20px;
+    }
+}
+.banner .dots{bottom: 50px !important;}
+.banner1{width: 100% !important;min-height:390px;}

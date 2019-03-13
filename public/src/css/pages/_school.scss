@@ -1,0 +1,113 @@
+@charset "UTF-8";
+.serve-list {
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 20px;
+    li {
+        list-style: disc;
+        font-size: 15px;
+        min-width: 300px;
+        margin-bottom: 5px;
+        float: left;
+    }
+}
+
+.classroom-wrap {
+    margin: 30px auto;
+    width: 980px;
+    .item {
+        width: 180px;
+        text-align: center;
+        border-radius: 4px;
+        box-shadow: 3px 3px 6px #E5E5E5, -1px -1px 6px #E5E5E5;
+        margin-right: 20px;
+        overflow: hidden;
+        float: left;
+        .class-icon {
+            height: 60px;
+            width: 100%;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .icon1 {
+            background: url(/dist/img/school/Director.png) no-repeat center;
+        }
+        .icon2 {
+            background: url(/dist/img/school/teacher.png) no-repeat center;
+        }
+        .icon3 {
+            background: url(/dist/img/school/parents.png) no-repeat center;
+        }
+        .icon4 {
+            background: url(/dist/img/school/chlid.png) no-repeat center;
+        }
+        .icon5 {
+            background: url(/dist/img/school/educational_institution.png) no-repeat center;
+        }
+        .details {
+            padding: 10px;
+            cursor: pointer;
+            height: 130px;
+            overflow: hidden;
+            .title {
+                font-size: 18px;
+                font-weight: normal;
+                margin-bottom: 10px;
+            }
+            p {
+                line-height: 1.4;
+                text-align: justify;
+                color: #666;
+                font-size: 14px;
+            }
+            &:hover {
+                color: #fff;
+                background: $brand-primary;
+                p {
+                    color: #fff;
+                }
+            }
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+.teacher-list {
+    text-align: center;
+    h2 {
+        margin-bottom: 20px;
+    }
+    .deputy{
+        font-size: 18px;
+    }
+    .teachers-scroll {
+        width: 1000px;
+        margin: 40px auto;
+        .teachers-info {
+            li {
+                .item {
+                    width: 150px;
+                    margin: 0 14px;
+                    float: left;
+                    img{
+                        border-radius: 50%;
+                    }
+                    .name{
+                        display: inline-block;
+                        margin: 5px 0 10px;
+                    }
+                    .introduce {
+                        text-align: justify;
+                        line-height: 1.4;
+                        font-size: 14px;
+                        min-height: 100px;
+                    }
+                    &:first-of-type {
+                        margin-left: 70px;
+                    }
+                }
+            }
+        }
+    }
+}

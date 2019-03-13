@@ -1,0 +1,120 @@
+@charset "UTF-8";
+.product-nav-wrap {
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 1000;  
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    .product-nav {
+        width: 806px;
+        width: fit-content;
+        margin: 20px auto 0;
+        li {
+            float: left;
+            a {
+                padding: 10px 30px 10px 0;
+                .icon {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background: firebrick;
+                }
+                text {
+                    display: inline-block;
+                    padding: 0 6px;
+                    vertical-align: top;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        li:nth-child(1) {
+            .icon {
+                background: url(/dist/img/product/recruitStudent/icon_group.png) no-repeat left center;
+            }
+            a.active {
+                color: $brand-primary;
+                .icon {
+                    background: url(/dist/img/product/recruitStudent/icon_group_green.png) no-repeat left center;
+                }
+                text {
+                    border-bottom: 2px solid $brand-primary;
+                }
+            }
+        }
+        li:nth-child(2) {
+            .icon {
+                background: url(/dist/img/product/recruitStudent/icon_Park.png) no-repeat left center;
+            }
+            a.active {
+                color: $brand-primary;
+                .icon {
+                    background: url(/dist/img/product/recruitStudent/icon_Park_green.png) no-repeat left center;
+                }
+                text {
+                    border-bottom: 2px solid $brand-primary;
+                }
+            }
+        }
+        li:nth-child(3) {
+            .icon {
+                background: url(/dist/img/product/recruitStudent/icon_teach.png) no-repeat left center;
+            }
+            a.active {
+                color: $brand-primary;
+                .icon {
+                    background: url(/dist/img/product/recruitStudent/icon_teach_green.png) no-repeat left center;
+                }
+                text {
+                    border-bottom: 2px solid $brand-primary;
+                }
+            }
+        }
+        li:nth-child(4) {
+            .icon {
+                background: url(/dist/img/product/recruitStudent/icon_school_home.png) no-repeat left center;
+            }
+            a.active {
+                color: $brand-primary;
+                .icon {
+                    background: url(/dist/img/product/recruitStudent/icon_school_home_green.png) no-repeat left center;
+                }
+                text {
+                    border-bottom: 2px solid $brand-primary;
+                }
+            }
+        }
+        li:nth-child(5) {
+            .icon {
+                background: url(/dist/img/product/recruitStudent/icon_health.png) no-repeat left center;
+            }
+            a.active {
+                color: $brand-primary;
+                .icon {
+                    background: url(/dist/img/product/recruitStudent/icon_health_green.png) no-repeat left center;
+                }
+                text {
+                    border-bottom: 2px solid $brand-primary;
+                }
+            }
+        }
+        li:nth-child(6) {
+            .icon {
+                background: url(/dist/img/product/recruitStudent/icon_student.png) no-repeat left center;
+            }
+            a.active {
+                color: $brand-primary;
+                .icon {
+                    background: url(/dist/img/product/recruitStudent/icon_student_green.png) no-repeat left center;
+                }
+                text {
+                    border-bottom: 2px solid $brand-primary;
+                }
+            }
+            a {
+                padding-right: 0
+            }
+        }
+    }
+}

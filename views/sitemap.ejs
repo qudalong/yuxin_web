@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<link href="//cdn.bootcss.com/normalize/4.2.0/normalize.min.css" rel="stylesheet">
+		<title>
+			<%= title %>
+		</title>
+
+		<!-- 生产环境 删除以下js，此js仅使用开发环境自动监控模板文件 -->
+		<script>
+			document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+		</script>
+		<style>
+			a {
+				color: #333;
+				text-decoration: none;
+			}
+			
+			.sitemap {
+				width: 1000px;
+				margin: 0 auto;
+				padding: 20px;
+				min-width: 320px;
+				font-family: "Microsoft YaHei UI";
+			}
+			
+			.sitemap h2 {
+				margin: 30px auto 40px;
+				color: #00cc99;
+				font-size: 30px;
+				text-align: center;
+				font-weight: normal;
+			}
+			
+			.sitemap dl {
+				padding-bottom: 20px;
+				margin-bottom: 20px;
+				border-bottom: 2px solid #ccc;
+			}
+			
+			.sitemap dt {
+				font-size: 22px;
+				font-weight: 400;
+				color: #00cc99;
+				margin-bottom: 10px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			
+			.sitemap dd {
+				line-height: 32px;
+				font-size: 16px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			
+			.sitemap dd small {
+				margin-left: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<section class="main-bg">
+			<div class="sitemap">
+				<h2 class="text-center">童忆园官网</h2>
+
+				<dl>
+					<dd>
+						<a href="/" target="_blank">首页
+							<small>template:index</small>
+						</a>
+					</dd>
+					<dd>
+						<a href="/pages/school/school" target="_blank">童忆学院
+							<small>template:school/school</small>
+						</a>
+					</dd>
+					<dd>
+						<a href="/pages/agentAlliance/agent_alliance" target="_blank">代理加盟
+							<small>template:agentAlliance/agent_alliance</small>
+						</a>
+					</dd>
+					<dd>
+						<a href="pages/news/news" target="_blank">新闻中心
+							<small>template:news/news</small>
+						</a>
+					</dd>
+					<dd>
+						<a href="pages/news/news_details" target="_blank">新闻详情
+							<small>template:news/news_details</small>
+						</a>
+					</dd>
+					<dd>
+						<a href="pages/aboutUs/about_us" target="_blank">关于我们
+							<small>template:aboutUs/about_us</small>
+						</a>
+					</dd>
+					<dd>
+						<a href="pages/login/login" target="_blank">登录
+							<small>template:login/login</small>
+						</a>
+					</dd>
+					<dt>产品</dt>
+					<dd>
+						<a href="pages/product/class_mange" target="_blank">园务管理
+							<small>template:product/class_mange</small>
+						</a>
+					</dd>
+				</dl>
+				
+			</div>
+		</section>
+
+	</body>
+
+</html>

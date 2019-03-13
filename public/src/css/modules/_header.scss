@@ -1,0 +1,61 @@
+@charset "UTF-8";
+.head-wrap {
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    .head {
+        margin: 0 auto;
+        width: 1000px;
+        height: 80px;
+        .logo {
+            margin-top: 11px;
+            display: inline-block;
+            float: left;
+            &:hover {
+                opacity: .8;
+            }
+        }
+        .r-wrap {
+            line-height: 80px;
+            float: right;
+            .nav {
+                display: inline-block;
+                a {
+                    padding: 0 14px;
+                    display: inline-block;
+                    &.active {
+                        border-bottom: 3px solid $brand-primary;
+                        color: $brand-primary;
+                        height: 77px;
+                    }
+                }
+            }
+            .login-btn {
+                width: 91px;
+                display: inline-block;
+                background: url(/dist/img/index/Top_navigation_jianbian.png) no-repeat center;
+                text-align: center;
+                color: #fff;
+                font-size: 14px;
+                cursor: pointer;
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}
+.head-wrap + .banner,.head-wrap + img,.head-wrap + .news_nav,.head-wrap + .us-banner{
+    margin-top: 80px;
+}
+.product-nav-wrap + div{
+    margin-top: 132px;
+}
+.head-wrap + .news-details{
+    margin-top: 100px;
+}

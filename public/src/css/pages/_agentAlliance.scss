@@ -1,0 +1,104 @@
+@charset "UTF-8";
+.agen-h2{
+    font-weight: normal;
+    font-size: 28px;
+}
+.orientation-wrap {
+    padding: 30px 0;
+    text-align: center;
+    width: 1000px;
+    width: fit-content;
+    margin: 0 auto;
+    .item {
+        float: left;
+        margin: 67px 20px 0 0;
+        .img {
+            height: 122px;
+            .consumption {
+                margin-top: 20px;
+            }
+        }
+        .introduce {
+            width: 200px;
+            border: 1px solid #f0f0f0;
+            border-radius: 6px;
+            margin-top: 30px;
+            padding: 45px 15px;
+            p {
+                text-align: justify;
+                line-height: 1.5;
+                margin-top: 20px;
+                height: 110px;
+                overflow: auto;
+            }
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+.advantage-wrap {
+    padding: 70px 0;
+    text-align: center;
+    .advantage {
+        width: 1000px;
+        margin: 50px auto 0;
+        .item {
+            float: left;
+            margin-right: 96px;
+            .orderby {
+                float: left;
+                height: 80px;
+                width: 80px;
+                text-align: center;
+                line-height: 80px;
+                background: $brand-primary;
+                color: #fff;
+                font-size: 24px;
+                font-weight: bold;
+                border-radius: 4px;
+            }
+            .introduce {
+                float: left;
+                width: 352px;
+                min-height: 180px;
+                overflow: auto;
+                padding-left: 18px;
+                line-height: 1.4;
+                text-align: justify;
+                h3 {
+                    margin-bottom: 10px;
+                    text-align: left;
+                }
+            }
+        }
+        .two,.four{
+            margin-right: 0;
+        }
+    }
+}
+
+.cooperation-wrap{
+    height:310px;
+    padding:80px 0;
+    text-align: center;
+    color: #fff;
+    background: url(/dist/img/agentAlliance/Cooperation_banner.png) no-repeat center;
+    background-size:cover;
+    .flow-wrap{
+        margin: 50px auto 0;
+        width: 930px;
+        .item{
+            float: left;
+            .flow-name{
+                font-size: 22px;
+                margin-top: 20px;
+            }
+        }
+        .targ{
+            float: left;
+            margin: 50px 30px;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+@charset "UTF-8";
+.common {
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.common-w {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.common-banner {
+    width: 100%;
+}
+
+.recommend {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    h2 {
+        margin-bottom: 10px;
+        font-weight: normal;
+        font-size: 36px;
+    }
+
+    p {
+        line-height: 2;
+        font-size: 18px;
+    }
+}
+
+.recommend-t {
+    text-align: center;
+    padding-top: 50px;
+    h2 {
+        margin-bottom: 10px;
+        font-weight: normal;
+        font-size: 36px;
+    }
+    p {
+        line-height: 2;
+        font-size: 22px;
+    }
+}
+
+.recommend-pos {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.recommend-16 {
+    right: 14%;
+}
+
+.bgF3 {
+    background: #F3F3F3;
+}
+
+//园务管理
+.mange-banner01 {
+    background: url(/dist/img/product/classMange/park_banner.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.teacher-management {
+    left: 0 !important;
+}
+
+.park_banner_phone {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+//宣传招生
+.rec-banner {
+    position: relative;
+}
+
+.code-wrap {
+    img {
+        margin-right: 20px;
+    }
+}
+
+//安全健康
+.safety-pos {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.step {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.base-color {
+    color: $brand-primary;
+}
+
+.recommend-l {
+    left: 0;
+}
+
+.recommend-r {
+    right: 0;
+}
+
+.recommend-rr {
+    left: 850px;
+}
+.recommend-r2 {
+    left: 750px;
+}
+
+img.recommend {
+    bottom: 0 !important;
+    top: auto;
+    transform: translateY(0);
+}
+
+.innerbox {
+    width: 1200px;
+    min-height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
