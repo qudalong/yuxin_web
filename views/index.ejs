@@ -1,14 +1,56 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/dist/css/main.css' />
-    <script>
-			document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-		</script>
-  </head>
+<% include ./meta.ejs %>
+<meta name="keywords" content="童忆园,tongyiyuan,童忆学院,童忆园官网,宇信科技童忆园,童忆园下载,童忆园家长版,童忆园老师版,幼儿园,幼儿园管理,育儿教育,家园共育,家园沟通" />
+<meta name="description" content="童忆园致力于通过大数据及物联网技术,为幼儿园提供数字校园建设、知识校园建设、品牌校园建设一体化解决方案,帮助幼儿园解决管理、沟通、培训、招生等运营中的痛点,实现智能化管理,真正做到让园方更省心,让家长更放心。" />
+<title>
+	<%=title%>
+</title>
+</head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to11111122223345 <%= title %></p>
+   <!--头部-->
+	<% include ./modules/header.ejs %>
+	<!--轮播图-->
+	<div class="banner banner1">
+		<ul class="banner-ul">
+			<li>
+				<img src="/dist/img/index/home_banner.png" width="100%" title="童忆园-智慧校园云平台" alt="构建全业务服务体系，助力幼儿园提升综合竞争力">
+			</li>
+			<li>
+				<img src="/dist/img/index/home_banner.png" width="100%" title="童忆园-智慧校园云平台" alt="构建全业务服务体系，助力幼儿园提升综合竞争力">
+			</li>
+			<!--<li>
+				<img src="/dist/img/index/home_banner.png" width="100%" title="童忆园-智慧校园云平台" alt="构建全业务服务体系，助力幼儿园提升综合竞争力">
+			</li>-->
+		</ul>
+		<a href="javascript:void(0);" class="unslider prev unslider-l" title="童忆园-智慧校园云平台">
+			<img class="arrow" id="al" src="/dist/img/index/home_left_arrow_white.png" alt="prev" width="20" height="35">
+		</a>
+		<a href="javascript:void(0);" class="unslider next unslider-r" title="童忆园-智慧校园云平台">
+			<img class="arrow" id="ar" src="/dist/img/index/home_Right_arrow_white.png" alt="next" width="20" height="37">
+		</a>
+	</div>
   </body>
+  <!--尾部-->
+  <% include ./modules/footer.ejs %>
+  <script src="/vendors/unslider.min.js"></script>
+
+  <script type="text/javascript">
+	window.onresize = function(){
+    var imgH=$(".banner1 img").height();
+    $(".banner1").css('height',imgH+'px')
+    
+  }
+	$(document).ready(function(e) {
+    
+    //banner轮播
+		var banner1 = $('.banner1').unslider({
+      dots: true
+    }),
+    data1 = banner1.data('unslider');
+		$('.unslider').click(function() {
+      var fn1 = this.className.split(' ')[1];
+			data1[fn1]();
+		});
+	});
+  </script>
+
 </html>
