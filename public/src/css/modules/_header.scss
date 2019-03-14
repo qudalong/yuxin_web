@@ -7,7 +7,7 @@
     left: 0;
     z-index: 1000;
     background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
     .head {
         padding: 0 50px;
         margin: 0 auto;
@@ -27,13 +27,16 @@
             .nav {
                 display: inline-block;
                 margin-right: 30px;
-                a {
-                    padding: 0 14px;
+                .item {
                     display: inline-block;
-                    &.active {
-                        border-bottom: 3px solid $brand-primary;
-                        color: $brand-primary;
-                        height: 77px;
+                    position: relative;
+                    a {
+                        padding: 0 24px;
+                        display: inline-block;
+                        &.active {
+                            border-bottom: 3px solid $brand-primary;
+                            color: $brand-primary;
+                        }
                     }
                 }
             }
@@ -52,9 +55,37 @@
         }
     }
 }
-.gzh{
+
+.gzh {
     padding-left: 10px;
-    img{
+    img {
         padding-right: 10px;
+    }
+}
+
+.nav2 {
+    width:338px; 
+    position: absolute;
+    top:70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 1px 2px 6px #666;
+    border-radius: 2px;
+    ul {
+        float: left;
+        border-right: 1px solid #f0f0f0;
+        padding: 4px;
+        line-height: 1.8; 
+        text-align: center;
+        font-size: 15px;
+        min-height: 110px;
+        .title{
+            color: $brand-primary;
+        }
+        a{
+            border-bottom:0;
+            padding: 0 4px !important;
+        }  
     }
 }

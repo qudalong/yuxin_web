@@ -86,20 +86,17 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		//导航链接跳转
-		$('.head-wrap .nav a').each(function() {
+		$('.head-wrap .nav .link').each(function() {
 			if($($(this))[0].href == String(window.location))
 				$(this).addClass('active').attr('href', 'javascript:void(0);');
 				$('.head-wrap .nav .help').css("color","#000000");
 		});
-		$('.product-nav  a').each(function() {
-			if($($(this))[0].href == String(window.location))
-				$(this).addClass('active').attr('href', 'javascript:void(0);');
-				$('.head-wrap .nav .product').addClass('active').attr('href', 'javascript:void(0);');
-		});
+//		$('.product-nav  a').each(function() {
+//			if($($(this))[0].href == String(window.location))
+//				$(this).addClass('active').attr('href', 'javascript:void(0);');
+//				$('.head-wrap .nav .product').addClass('active').attr('href', 'javascript:void(0);');
+//		});
 		
-		//选择信息
-		$(".line span").on("click",function(){
-			$(this).addClass("active").siblings().removeClass("active");
-		})
+		
 	})
 </script>

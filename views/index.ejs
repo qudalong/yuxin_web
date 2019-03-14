@@ -10,7 +10,7 @@
 	<!--头部-->
 	<% include ./modules/header.ejs %>
 	<!--轮播图-->
-	<div class="banner banner1">
+	<div class="banner-home">
 		<ul class="banner-ul">
 			<li>
 				<img src="/dist/img/index/home_banner.png" width="100%" title="童忆园-智慧校园云平台" alt="构建全业务服务体系，助力幼儿园提升综合竞争力">
@@ -18,9 +18,6 @@
 			<li>
 				<img src="/dist/img/index/home_banner.png" width="100%" title="童忆园-智慧校园云平台" alt="构建全业务服务体系，助力幼儿园提升综合竞争力">
 			</li>
-			<!--<li>
-				<img src="/dist/img/index/home_banner.png" width="100%" title="童忆园-智慧校园云平台" alt="构建全业务服务体系，助力幼儿园提升综合竞争力">
-			</li>-->
 		</ul>
 		<a href="javascript:void(0);" class="unslider prev unslider-l" title="童忆园-智慧校园云平台">
 			<img class="arrow" id="al" src="/dist/img/index/home_left_arrow_white.png" alt="prev" width="20" height="35">
@@ -186,20 +183,20 @@
 
 <script type="text/javascript">
 	window.onresize = function () {
-		var imgH = $(".banner1 img").height();
-		$(".banner1").css('height', imgH + 'px')
+		var imgH = $(".banner-home img").height();
+		$(".banner-home").css('height', imgH + 'px')
 
 	}
 	$(document).ready(function (e) {
 
 		//banner轮播
-		var banner1 = $('.banner1').unslider({
+		var bannerHome = $('.banner-home').unslider({
 				dots: true
 			}),
-			data1 = banner1.data('unslider');
+			data = bannerHome.data('unslider');
 		$('.unslider').click(function () {
-			var fn1 = this.className.split(' ')[1];
-			data1[fn1]();
+			var fn = this.className.split(' ')[1];
+			data[fn]();
 		});
 	});
 </script>
