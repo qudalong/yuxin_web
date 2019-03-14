@@ -16,6 +16,9 @@ a {
     opacity: 0.7;
     text-decoration: none; }
 
+.hide {
+  display: none; }
+
 .tc {
   text-align: center !important; }
 
@@ -125,6 +128,8 @@ img {
             .head-wrap .head .r-wrap .nav .item a.active {
               border-bottom: 3px solid #4cb498;
               color: #4cb498; }
+          .head-wrap .head .r-wrap .nav .item:hover .nav2 {
+            display: block; }
       .head-wrap .head .r-wrap .login-btn {
         width: 91px;
         display: inline-block;
@@ -142,29 +147,33 @@ img {
     padding-right: 10px; }
 
 .nav2 {
-  width: 338px;
+  display: none;
+  width: 322px;
   position: absolute;
   top: 70px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.8);
-  -webkit-box-shadow: 1px 2px 6px #666;
-          box-shadow: 1px 2px 6px #666;
-  border-radius: 2px; }
+  -webkit-box-shadow: 0px 0 2px #ccc;
+          box-shadow: 0px 0 2px #ccc; }
   .nav2 ul {
     float: left;
     border-right: 1px solid #f0f0f0;
-    padding: 4px;
     line-height: 1.8;
     text-align: center;
     font-size: 15px;
     min-height: 110px; }
     .nav2 ul .title {
-      color: #4cb498; }
+      color: #4cb498;
+      border-right: 1px solid #000;
+      margin-right: -1px; }
     .nav2 ul a {
       border-bottom: 0;
-      padding: 0 4px !important; }
+      padding: 0 6px !important; }
+
+.yyal {
+  width: 103px; }
 
 .w {
   margin: auto; }
