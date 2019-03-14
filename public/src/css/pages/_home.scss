@@ -1,5 +1,91 @@
 @charset "UTF-8";
+//轮播图
+.banner1 {
+    position: relative;
+    // height: 667px !important;
+}
 
+.banner {
+    position: relative;
+    overflow: auto;
+    text-align: center;
+}
+
+.banner li {
+    list-style: none;
+}
+
+.banner ul li {
+    position: relative;
+    float: left;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+.banner .dots li {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+
+.banner .dots li.active {
+    background: #fff;
+    opacity: 1;
+}
+
+.unslider {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.unslider-l {
+    left: 50px !important;
+}
+
+.unslider-r {
+    right: 50px !important;
+}
+
+.unslider-arrow {
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+    line-height: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+// 
 .comm-block-bg {
     color: #fff !important;
 }
@@ -13,6 +99,7 @@
     background: url(/dist/img/index/yidongyingxiao_bg.png) no-repeat center;
     background-size: cover;
 }
+
 .bg-zhxy {
     background: url(/dist/img/index/zhihuiyuansuo_bg.png) no-repeat center;
     background-size: cover;
@@ -20,48 +107,61 @@
 
 // 模块通用1
 .comm-block {
-    width: 1000px;
+    min-width: 1000px;
     margin: 0 auto;
     padding: 80px 0 107px;
     text-align: center;
+}
 
-    h2 {
-        font-weight: normal;
-        font-size: 24px;
-    }
+h2 {
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 33px;
+}
 
-    .p-text {
-        line-height: 1.6;
-        font-size: 20px;
-        margin: 33px 0 70px;
-    }
+.p-text {
+    line-height: 1.6;
 }
 
 .comm-nav {
     text-align: center;
-
+    margin-top: 70px;
+    width: fit-content;
+    margin: 0 auto;
     .item {
         display: inline-block;
         padding: 0 56px;
-
+        cursor: pointer;
+        float: left;
         .type {
             font-size: 20px;
             margin-top: 20px;
+            padding-bottom: 10px;
         }
-
         .text {
             text-align: center;
             font-size: 20px;
             margin-top: 20px;
         }
-
         .text16 {
             text-align: center;
             font-size: 16px;
             margin-top: 10px;
             color: #666666;
         }
+        img {
+            transition: all 0.6s;
+            &:hover {
+                transform: scale(1.2) rotate(360deg);
+            }
+        }
     }
+}
+.intro{
+    padding-bottom: 30px;
+}
+.w150 {
+    width: 150px;
 }
 
 .btn {
@@ -79,24 +179,24 @@
 
 // 图文通用模块
 .comm-block-tw {
-    min-width: 1000px;
+    min-width: 1200px;
     min-height: 520px;
     margin: 0 auto;
     position: relative;
-
+    .left {
+        left: 0;
+    }
     .left100 {
         left: 100px;
     }
-
     .right {
         right: 0;
     }
     .right100 {
-        right: 100px; 
+        right: 100px;
     }
-
     .intro-wrap {
-        width: 530px; 
+        width: 530px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -104,20 +204,17 @@
             font-weight: normal;
             font-size: 24px;
         }
-
-        h3 { 
+        h3 {
             font-size: 20px;
             font-weight: normal;
         }
-
-        .intro-text { 
-            margin: 44px 0; 
+        .intro-text {
+            margin: 44px 0;
             font-size: 16px;
             line-height: 1.8;
             text-align: justify;
         }
     }
-
     .intro-img {
         position: absolute;
         bottom: 0;

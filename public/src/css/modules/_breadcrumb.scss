@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.breadcrumb-wrap {
+    width: 100%;
+    background: #EFF9FF;
+    .breadcrumb {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0;
+        a {
+            color: #666;
+            &.active {
+                color: #6BB1E0; 
+            }
+        }
+    }
+}

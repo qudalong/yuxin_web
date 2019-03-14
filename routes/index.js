@@ -11,8 +11,11 @@ router.get('/sitemap', function(req, res, next) {
 router.get('/', function(req, res, next) {
   res.render('index', { title: '宇信官网' });
 });
-router.get('/pages/news/news', function(req, res, next) {
-  res.render('pages/news/news', { title: '新闻中心' });
+router.get('/pages/solution/shopping', function(req, res, next) {
+  res.render('pages/solution/shopping', { title: '商城类' });
+});
+router.get('/pages/solution/food', function(req, res, next) {
+  res.render('pages/solution/food', { title: '餐饮' });
 });
 
 module.exports = router;

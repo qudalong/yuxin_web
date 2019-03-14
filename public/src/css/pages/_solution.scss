@@ -1,0 +1,80 @@
+@charset "UTF-8";
+.banner-wrap img{
+    width: 100%;
+}
+.intro-fxzx {
+    dl {
+        padding-top: 20px;
+        dt {
+            float: left;
+            margin-right: 20px;
+        }
+        dd {
+            float: left;
+            max-width: 500px;
+            width: fit-content;
+            line-height: 1.8;
+        }
+    }
+}
+
+.fxzx {
+    width: 700px !important;
+}
+
+.p-gary {
+    color: #878787;
+    line-height: 2;
+    .circle {
+        display: inline-block;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background: #878787;
+        margin-right: 6px;
+    }
+}
+
+.bg-spgl {
+    background: url(/dist/img/solution/shopping/shangpingunali_bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.bg-cp {
+    background: url(/dist/img/solution/shopping/chanpingongneng_bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.list-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    .item {
+        cursor: pointer;
+        width: 216px;
+        padding-right: 20px;
+        float: left;
+        margin-bottom: 40px;
+        height: 80px;
+        dt {
+            float: left;
+        }
+        dd {
+            padding-left: 90px;
+            text-align: left;
+        }
+        .row-1 {
+            padding-top: 10px;
+        }
+        .row-2 {
+            margin-top: 6px;
+            font-size: 14px;
+            color: #666;
+        }
+        img {
+            transition: all 0.6s;
+            &:hover {
+                transform: scale(1.2) rotate(360deg);
+            }
+        }
+    }
+}
