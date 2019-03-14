@@ -162,14 +162,12 @@
     color: #89BC3D;
 }
 
-.about_w .download i {
-    background: url(/dist/img/index/home_code.png) no-repeat;
-}
-
-.about_w .concern i {
-    background: url(/dist/img/index/home_tongyizhushou.png) no-repeat;
-}
-// 
-.f-titile a{
+.f-titile .title{
     color: #fff;
 }
+.about_w a{
+    color: #ababab;
+}
+// banner
+.banner .dots{bottom: 50px !important;}
+.banner1{width: 100% !important;min-height:390px;}

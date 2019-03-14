@@ -9,7 +9,7 @@ router.get('/sitemap', function(req, res, next) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: '宇信官网' });
 });
 router.get('/pages/news/news', function(req, res, next) {
   res.render('pages/news/news', { title: '新闻中心' });

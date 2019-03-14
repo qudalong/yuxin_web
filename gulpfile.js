@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 
 // css
 gulp.task('css', function() {
-    return gulp.src('public/src/css/*.scss')
+    return gulp.src('public/src/css/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
             style: 'expanded'

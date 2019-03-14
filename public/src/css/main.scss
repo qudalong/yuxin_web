@@ -1,21 +1,14 @@
 @charset "UTF-8";
 
 // 引入变量
-@import "base/variables";
+@import "base/_variables.scss";
 
 // 引入全局属性
-@import "base/global";
+@import "base/_global.scss";
 
 // 引入模块
-@import "modules/header";
-@import "modules/footer";
-@import "modules/productNav";
+@import "modules/_header.scss";
+@import "modules/_footer.scss";
 
-// 引入页面
-@import "pages/index"; 
-@import "pages/news";
-@import "pages/agentAlliance";
-@import "pages/product";
-@import "pages/school";
-@import "pages/aboutUs";
-@import "pages/login";
+// 引入页面 
+@import "pages/_home.scss";

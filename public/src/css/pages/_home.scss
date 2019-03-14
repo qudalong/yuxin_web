@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.comm-block-bg {
+    color: #fff !important;
+}
+
+.bg-dz {
+    background: url(/dist/img/index/dingzhiyanfa_bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.bg-yd {
+    background: url(/dist/img/index/yidongyingxiao_bg.png) no-repeat center;
+    background-size: cover;
+}
+.bg-zhxy {
+    background: url(/dist/img/index/zhihuiyuansuo_bg.png) no-repeat center;
+    background-size: cover;
+}
+
+// 模块通用1
+.comm-block {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 80px 0 107px;
+    text-align: center;
+
+    h2 {
+        font-weight: normal;
+        font-size: 24px;
+    }
+
+    .p-text {
+        line-height: 1.6;
+        font-size: 20px;
+        margin: 33px 0 70px;
+    }
+}
+
+.comm-nav {
+    text-align: center;
+
+    .item {
+        display: inline-block;
+        padding: 0 56px;
+
+        .type {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .text {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .text16 {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
+            color: #666666;
+        }
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 24px;
+    background: $brand-base;
+}
+
+.btn-gary {
+    background: #8c8caa;
+}
+
+// 图文通用模块
+.comm-block-tw {
+    min-width: 1000px;
+    min-height: 520px;
+    margin: 0 auto;
+    position: relative;
+
+    .left100 {
+        left: 100px;
+    }
+
+    .right {
+        right: 0;
+    }
+    .right100 {
+        right: 100px; 
+    }
+
+    .intro-wrap {
+        width: 530px; 
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        h2 {
+            font-weight: normal;
+            font-size: 24px;
+        }
+
+        h3 { 
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        .intro-text { 
+            margin: 44px 0; 
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+    }
+
+    .intro-img {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .comm-block-tw .intro-wrap {
+        width: 320px;
+    }
+}

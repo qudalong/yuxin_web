@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
-    font-family: Helvetica Neue, Helvetica, PingFang SC, 微软雅黑, Tahoma, Arial, sans-serif;
-    min-width: 1000px; 
+    font-family: "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif; 
+    min-width: 1200px; 
 }
 article, aside, blockquote, body, button, dd, div, dl, dt, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hr, input, legend, li, menu, nav, ol, p, pre, section, select, td, textarea, th, ul {
     margin: 0;
@@ -11,12 +11,12 @@ ul,li {
     list-style: none;
 }
 a {
-    text-decoration: none;
+    text-decoration: none; 
     color: #000;
     &:hover,
     &:focus {
-        color: $brand-primary;
-        text-decoration: none;
+       opacity: 0.8;
+        text-decoration: none; 
     }
 }
 
@@ -58,14 +58,14 @@ a {
     min-width: 1000px;
 }
 .fff{
-    color: #fff;
+    color: #fff !important;
 }
 
 .pr0{
     padding-right: 0 !important;
 }
 .pr10{
-    padding-right: 10px !important;
+    padding-right: 10px !important; 
 }
 .pr20{
     padding-right:20px !important;
@@ -73,3 +73,14 @@ a {
 .pr30{
     padding-right: 30px !important;
 }
+
+.pl200{
+    padding-left: 200px;  
+}
+.pl140{
+    padding-left: 140px;  
+}
+.relative{
+    position: relative;  
+} 
+
