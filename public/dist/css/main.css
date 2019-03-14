@@ -399,7 +399,8 @@ h2 {
   margin-bottom: 33px; }
 
 .p-text {
-  line-height: 1.6; }
+  line-height: 1.6;
+  font-size: 17px; }
 
 .comm-nav {
   text-align: center;
@@ -518,12 +519,21 @@ h2 {
     background: #878787;
     margin-right: 6px; }
 
+.bg-hyzx .p-gary {
+  color: #fff; }
+  .bg-hyzx .p-gary .circle {
+    background: #fff; }
+
 .bg-spgl {
   background: url(/dist/img/solution/shopping/shangpingunali_bg.png) no-repeat center;
   background-size: cover; }
 
 .bg-cp {
   background: url(/dist/img/solution/shopping/chanpingongneng_bg.png) no-repeat center;
+  background-size: cover; }
+
+.bg-hyzx {
+  background: url(/dist/img/solution/food/dingdanguanli_bg.png) no-repeat center;
   background-size: cover; }
 
 .list-wrap {
@@ -553,5 +563,10 @@ h2 {
       .list-wrap .item img:hover {
         -webkit-transform: scale(1.2) rotate(360deg);
                 transform: scale(1.2) rotate(360deg); }
+
+.wmdyx .item {
+  width: 30%;
+  margin-bottom: 60px;
+  padding-left: 15%; }
 
 /*# sourceMappingURL=main.css.map */

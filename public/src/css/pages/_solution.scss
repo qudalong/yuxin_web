@@ -1,7 +1,8 @@
 @charset "UTF-8";
-.banner-wrap img{
+.banner-wrap img {
     width: 100%;
 }
+
 .intro-fxzx {
     dl {
         padding-top: 20px;
@@ -35,6 +36,15 @@
     }
 }
 
+.bg-hyzx {
+    .p-gary {
+        color: #fff;
+        .circle {
+            background: #fff;
+        }
+    }
+}
+
 .bg-spgl {
     background: url(/dist/img/solution/shopping/shangpingunali_bg.png) no-repeat center;
     background-size: cover;
@@ -42,6 +52,11 @@
 
 .bg-cp {
     background: url(/dist/img/solution/shopping/chanpingongneng_bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.bg-hyzx {
+    background: url(/dist/img/solution/food/dingdanguanli_bg.png) no-repeat center;
     background-size: cover;
 }
 
@@ -76,5 +91,13 @@
                 transform: scale(1.2) rotate(360deg);
             }
         }
+    }
+}
+
+.wmdyx {
+    .item {
+        width: 30%;
+        margin-bottom: 60px;
+        padding-left: 15%;
     }
 }
