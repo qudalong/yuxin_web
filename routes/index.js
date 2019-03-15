@@ -17,5 +17,11 @@ router.get('/pages/solution/shopping', function(req, res, next) {
 router.get('/pages/solution/food', function(req, res, next) {
   res.render('pages/solution/food', { title: '餐饮' });
 });
+router.get('/pages/cooperation/cooperation', function(req, res, next) {
+  res.render('pages/cooperation/cooperation', { title: '渠道合作' });
+});
+router.get('/pages/aboutUs/aboutUs', function(req, res, next) {
+  res.render('pages/aboutUs/aboutUs', { title: '关于我们' });
+});
 
 module.exports = router;

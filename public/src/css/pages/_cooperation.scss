@@ -1,0 +1,141 @@
+@charset "UTF-8";
+.cooper {
+    position: relative;
+    .introduce {
+        width: 650px;
+        position: absolute;
+        top: 403px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: justify;
+        box-shadow: 1px 2px 6px #ccc;
+        line-height: 2;
+        padding: 20px;
+        background: #0080DA;
+        color: #fff;
+        border-radius: 4px;
+        .desc {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.how-todo {
+    position: relative;
+    min-width: 1000px;
+    line-height: 2;
+    margin-top: 229px;
+    padding: 50px 0 150px;
+    text-align: center;
+    background: #EFF9FF;
+    p {
+        width: 860px;
+        margin: 0 auto;
+        text-align: left;
+    }
+    h2 {
+        font-weight: normal;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+    .title {
+        display: inline-block;
+        width: 200px;
+        height: 30px;
+        text-align: right;
+    }
+}
+
+.efficiency {
+    width: 1000px;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    .item {
+        margin: 0 30px;
+        img {
+            transition: all 0.5s;
+        }
+        &:hover img {
+            transform: scale(1.2);
+        }
+    }
+}
+
+//加盟流程
+.flow .item {
+    width: 180px;
+    padding: 0 10px;
+    dt {
+        float: none;
+    }
+    dd {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+//招募政策
+.recruit-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    .img-wrap {
+        float: left;
+    }
+    .recru-desc {
+        float: right;
+        text-align: left;
+        .item {
+            margin-bottom: 20px;
+            h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+//报名
+.bg-bm {
+    background: url(/dist/img/cooperation/qudao_bg.png) no-repeat center;
+    background-size: cover;
+}
+.next-icon{
+    padding:0 40px;
+}
+.apply-wrap{
+    float: left;
+    .label-row{
+        display: block;
+        margin-bottom: 20px;
+        span{
+            display: inline-block;
+            min-width: 90px;
+            text-align: left;
+            color:#3499D5 ;
+            vertical-align: middle;
+        }
+        .vt{
+            vertical-align: top;
+        }
+        .form-control{
+            box-sizing: border-box;
+            width: 280px;
+            height: 32px;
+            line-height: 32px;
+            padding:0 10px;
+            border-radius: 4px;
+            background:#DEDADA ;
+            border: none;
+        }
+        .textarea{
+            height: 80px;
+            overflow: auto;
+            line-height: 1.4;
+            padding: 10px;
+
+        }
+    }
+}
