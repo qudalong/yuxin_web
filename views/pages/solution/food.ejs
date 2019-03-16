@@ -33,7 +33,7 @@
 
 	<!-- 我们的产品功能 -->
 	<div class="comm-block-bg bg-list">
-		<div class="comm-block classify-list w1000 clearfix">
+		<div class="comm-block classify-list w1000 clearfix relation">
 			<div class="left-wrap">
 				<label class="item"><span>门店管理</span><img src="/dist/img/solution/food/mendianguanli.png" /></label>
 				<label class="item"><span>外卖</span><img src="/dist/img/solution/food/waimai.png" /></label>
@@ -41,7 +41,13 @@
 				<label class="item"><span>积分商城</span><img src="/dist/img/solution/food/jifenshangcheng.png" /></label>
 			</div>
 			<div class="center-wrap">
-				<img src="/dist/img/solution/food/shangjiaxianqging.png"/>
+				<div class="scroll-img">
+					<div class="inner">
+						<img src="/dist/img/solution/food/shangjiaxianqging.png" />
+						<img src="/dist/img/solution/food/shangjiaxianqging.png" />
+						<img src="/dist/img/solution/food/shangjiaxianqging.png" />
+					</div>
+				</div>
 			</div>
 			<div class="right-wrap">
 				<label class="item"><img src="/dist/img/solution/food/mendianguanli.png" /><span>扫码点餐</span></label>
@@ -144,5 +150,31 @@
 	<!--尾部-->
 	<% include ../../modules/footer.ejs %>
 </body>
+<script type="text/javascript">
+	//
+	function scrollLeft() {
+		$('.inner').animate({
+				'left': '-190px'
+			}, {
+				queue: true,
+				duration: 4000
+			})
+			.animate({
+				'left': '-380px'
+			}, {
+				queue: true,
+				duration: 4000
+			})
+			.animate({
+				'left': '0'
+			}, {
+				queue: true,
+				duration: 0
+			});
+	}
+	setInterval(function() {
+		scrollLeft();
+	}, 8000);
+</script>
 
 </html>

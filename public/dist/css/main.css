@@ -49,6 +49,9 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
+.relation {
+  position: relative; }
+
 .hide {
   display: none !important; }
 
@@ -654,10 +657,29 @@ h2 {
 
 .classify-list .center-wrap {
   float: left;
-  margin: 0 100px; }
+  width: 242px;
+  height: 501px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  .classify-list .center-wrap .scroll-img {
+    height: 100%;
+    position: relative;
+    background: url(/dist/img/food/shangjiaxianqging.png); }
+    .classify-list .center-wrap .scroll-img .inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 676px; }
+      .classify-list .center-wrap .scroll-img .inner img {
+        float: left; }
 
 .classify-list .right-wrap {
-  float: left; }
+  float: right;
+  margin-right: 200px; }
 
 .cooper {
   position: relative; }
@@ -809,6 +831,8 @@ h2 {
     .company-intro .content-right .content {
       text-align: justify;
       line-height: 2.4; }
+      .company-intro .content-right .content h3 {
+        font-weight: 700; }
 
 .img-group img {
   margin: 0 10px 10px 0; }
