@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.bg-fw {
+    background: url(/dist/img/order/fuwuliucheng_bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.flow-step {
+    padding-top: 30px;
+    .item {
+        position: relative;
+        height: 120px;
+        padding: 0 30px;
+        img:hover {
+            transform: scale(1.2);
+        }
+        .text {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 100px;
+            transform: translateX(-50%);
+        }
+    }
+}
+.ourfw{margin-top: 30px;}

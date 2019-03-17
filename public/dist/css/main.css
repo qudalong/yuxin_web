@@ -73,6 +73,12 @@ a {
 .pr30 {
   padding-right: 30px !important; }
 
+.pb0 {
+  padding-bottom: 0; }
+
+.pt10 {
+  padding-top: 10px; }
+
 .pl200 {
   padding-left: 200px; }
 
@@ -93,6 +99,9 @@ img {
 
 .mt120 {
   margin-top: 120px !important; }
+
+.mb20 {
+  margin-bottom: 20px; }
 
 .w1000 {
   width: 1200px;
@@ -366,7 +375,7 @@ img {
 h2 {
   font-weight: normal;
   font-size: 24px;
-  margin-bottom: 33px; }
+  margin-bottom: 20px; }
 
 .p-text {
   line-height: 1.6;
@@ -784,6 +793,7 @@ h2 {
     .apply-wrap .label-row .vt {
       vertical-align: top; }
     .apply-wrap .label-row .form-control {
+      cursor: pointer;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       width: 280px;
@@ -836,5 +846,66 @@ h2 {
 
 .img-group img {
   margin: 0 10px 10px 0; }
+
+.comm-block-h {
+  min-height: 480px !important; }
+
+.operate-list {
+  padding: 50px 0; }
+  .operate-list img {
+    height: 90px; }
+  .operate-list .type {
+    font-size: 18px !important; }
+
+.bg-gary {
+  background: #f0f0f0; }
+
+.outer-wrap {
+  float: left;
+  position: relative;
+  min-height: 480px;
+  width: 50%; }
+
+.middle {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center; }
+  .middle h2 {
+    margin-bottom: 6px; }
+  .middle .p-gary {
+    margin-bottom: 20px; }
+  .middle img {
+    padding: 20px 0; }
+  .middle .block {
+    padding-left: 200px;
+    text-align: left; }
+
+.bg-fw {
+  background: url(/dist/img/order/fuwuliucheng_bg.png) no-repeat center;
+  background-size: cover; }
+
+.flow-step {
+  padding-top: 30px; }
+  .flow-step .item {
+    position: relative;
+    height: 120px;
+    padding: 0 30px; }
+    .flow-step .item img:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
+    .flow-step .item .text {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 100px;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+
+.ourfw {
+  margin-top: 30px; }
 
 /*# sourceMappingURL=main.css.map */

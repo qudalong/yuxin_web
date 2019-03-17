@@ -23,5 +23,11 @@ router.get('/pages/cooperation/cooperation', function(req, res, next) {
 router.get('/pages/aboutUs/aboutUs', function(req, res, next) {
   res.render('pages/aboutUs/aboutUs', { title: '关于我们' });
 });
+router.get('/pages/operate/operate', function(req, res, next) {
+  res.render('pages/operate/operate', { title: '运营推广' });
+});
+router.get('/pages/order/order', function(req, res, next) {
+  res.render('pages/order/order', { title: '定制开发' });
+});
 
 module.exports = router;

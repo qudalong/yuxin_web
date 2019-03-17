@@ -1,0 +1,162 @@
+<% include ../../meta.ejs %>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>
+	<%=title%>
+</title>
+</head>
+
+<body>
+	<!--头部-->
+	<% include ../../modules/header.ejs %>
+	<div class="banner-wrap">
+		<img src="/dist/img/solution/shopping/shangchengxiaochengxu_bg.png" />
+	</div>
+	<!-- 我们的服务 -->
+	<div class="comm-block pb30">
+		<div class="intro">
+			<h2>我们的服务</h2>
+			<p class="p-text">专业的技术团队，打造您的定制服务</p>
+		</div>
+		<div class="comm-nav ourfw clearfix">
+			<div class="item">
+				<img src="/dist/img/order/ruanjiandingzhi.png" alt="">
+				<div class="type">软件定制开发</div>
+			</div>
+			<div class="item">
+				<img src="/dist/img/order/wangzhankaifa.png" alt="">
+				<div class="type">网站开发</div>
+			</div>
+			<div class="item">
+				<img src="/dist/img/order/appdingzhi.png" alt="">
+				<div class="type">APP定制开发</div>
+			</div>
+			<div class="item">
+				<img src="/dist/img/order/weixindingzhi.png" alt="">
+				<div class="type">微信定制开发</div>
+			</div>
+		</div>
+	</div>
+	<!-- 服务流程 -->
+	<div class="comm-block-bg bg-fw">
+		<div class="comm-block ">
+			<div class="intro">
+				<h2>服务流程</h2>
+				<p class="p-text">完善的服务流程，贴心的服务设计</p>
+			</div>
+			<div class="comm-nav flow-step clearfix">
+				<div class="item">
+					<img src="/dist/img/order/xuqiu_icon.png" alt="">
+					<p class="text">需求研发</p>
+				</div>
+				<div class="item">
+					<img src="/dist/img/order/fenxi_icon.png" alt="">
+					<p class="text">需求分析</p>
+				</div>
+				<div class="item">
+					<img src="/dist/img/order/pingsheni_icon.png" alt="">
+					<p class="text">需求评审</p>
+				</div>
+				<div class="item">
+					<img src="/dist/img/order/yuanxing_icon.png" alt="">
+					<p class="text">原型设计</p>
+				</div>
+				<div class="item">
+					<img class="pt10" src="/dist/img/order/ui_icon.png" alt="">
+					<p class="text">UI设计</p>
+				</div>
+				<div class="item">
+					<img class="pt10" src="/dist/img/order/chengxu_icon.png" alt="">
+					<p class="text">程序开发</p>
+				</div>
+				<div class="item">
+					<img src="/dist/img/order/xiangmu_icon.png" alt="">
+					<p class="text">项目测试</p>
+				</div>
+				<div class="item">
+					<img src="/dist/img/order/shangxian_icon.png" alt="">
+					<p class="text">上线</p>
+				</div>
+				<div class="item">
+					<img src="/dist/img/order/weihu_icon.png" alt="">
+					<p class="text">维护支撑</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 我们的服务范围 -->
+	<div class="comm-block pb30">
+		<div class="intro">
+			<h2>我们的服务范围</h2>
+			<p class="p-text pb0">为各行各业提供专属的定制开发服务</p>
+		</div>
+		<img src="/dist/img/order/fuwufanwei_bg.png" width="100%" />
+	</div>
+	<!-- 订单管理 -->
+	<div class="comm-block-bg bg-yd">
+		<div class="comm-block ">
+			<div class="intro pb30">
+				<h2>专业项目团队</h2>
+				<p class="p-text">确保需求满足最大化</p>
+			</div>
+			<div class="order-type">
+				<div class="item">
+					<img src="/dist/img/order/chanpinxuqiu_icon.png" />
+					<div class="desc">
+						<div class="type">产品需求分析师</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="/dist/img/order/shejituandui_icon.png" />
+					<div class="desc">
+						<div class="type">UI设计团队</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="/dist/img/order/kejiyanfa_icon.png" />
+					<div class="desc">
+						<div class="type">科技研发</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="/dist/img/order/kejiyanfa_icon.png" />
+					<div class="desc">
+						<div class="type">项目管理</div>
+						<div class="">确保需求满足最大化</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--尾部-->
+	<% include ../../modules/footer.ejs %>
+</body>
+<script type="text/javascript">
+	//
+	function scrollLeft() {
+		$('.inner').animate({
+				'left': '-190px'
+			}, {
+				queue: true,
+				duration: 4000
+			})
+			.animate({
+				'left': '-380px'
+			}, {
+				queue: true,
+				duration: 4000
+			})
+			.animate({
+				'left': '0'
+			}, {
+				queue: true,
+				duration: 0
+			});
+	}
+	setInterval(function() {
+		scrollLeft();
+	}, 8000);
+</script>
+
+</html>

@@ -102,40 +102,42 @@
     background: url(/dist/img/cooperation/qudao_bg.png) no-repeat center;
     background-size: cover;
 }
-.next-icon{
-    padding:0 40px;
+
+.next-icon {
+    padding: 0 40px;
 }
-.apply-wrap{
+
+.apply-wrap {
     float: left;
-    .label-row{
+    .label-row {
         display: block;
         margin-bottom: 20px;
-        span{
+        span {
             display: inline-block;
             min-width: 90px;
             text-align: left;
-            color:#3499D5 ;
+            color: #3499D5;
             vertical-align: middle;
         }
-        .vt{
+        .vt {
             vertical-align: top;
         }
-        .form-control{
+        .form-control {
+            cursor: pointer;
             box-sizing: border-box;
             width: 280px;
             height: 32px;
             line-height: 32px;
-            padding:0 10px;
+            padding: 0 10px;
             border-radius: 4px;
-            background:#DEDADA ;
+            background: #DEDADA;
             border: none;
         }
-        .textarea{
+        .textarea {
             height: 80px;
             overflow: auto;
             line-height: 1.4;
             padding: 10px;
-
         }
     }
 }
