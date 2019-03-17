@@ -22,4 +22,21 @@
         }
     }
 }
-.ourfw{margin-top: 30px;}
+
+.ourfw {
+    margin-top: 30px;
+}
+
+.more-box {
+    box-sizing: border-box;
+    padding-top: 80px;
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    background: #4cb498;
+    color: #fff;
+    .type {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+}

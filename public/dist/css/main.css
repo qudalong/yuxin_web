@@ -169,9 +169,8 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.8);
-  -webkit-box-shadow: 0px 0 2px #ccc;
-          box-shadow: 0px 0 2px #ccc; }
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid #dedede; }
   .nav2 ul {
     float: left;
     border-right: 1px solid #fff;
@@ -185,6 +184,8 @@ img {
     .nav2 ul a {
       border-bottom: 0;
       padding: 0 6px !important; }
+  .nav2 ul:last-child {
+    border-right: 0; }
 
 .yyal {
   width: 103px; }
@@ -333,7 +334,7 @@ img {
   color: #ababab; }
 
 .dots {
-  bottom: 50px !important; }
+  bottom: 30px !important; }
 
 .banner-home {
   width: 100% !important;
@@ -556,7 +557,7 @@ h2 {
   width: 700px !important; }
 
 .p-gary {
-  color: #878787;
+  color: #666;
   line-height: 2; }
   .p-gary .circle {
     display: inline-block;
@@ -662,12 +663,14 @@ h2 {
 
 .classify-list .left-wrap {
   float: left;
-  margin-left: 200px; }
+  margin-left: 220px; }
+
+.classify-list .right-wrap {
+  float: right;
+  margin-right: 220px; }
 
 .classify-list .center-wrap {
   float: left;
-  width: 242px;
-  height: 501px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -675,9 +678,11 @@ h2 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
   .classify-list .center-wrap .scroll-img {
-    height: 100%;
+    height: 595px;
+    width: 287px;
     position: relative;
-    background: url(/dist/img/food/shangjiaxianqging.png); }
+    background: url(/dist/img/solution/food/shangjiaxianqging.png);
+    background-size: 287px 595px; }
     .classify-list .center-wrap .scroll-img .inner {
       position: absolute;
       top: 0;
@@ -686,14 +691,12 @@ h2 {
       .classify-list .center-wrap .scroll-img .inner img {
         float: left; }
 
-.classify-list .right-wrap {
-  float: right;
-  margin-right: 200px; }
-
 .cooper {
   position: relative; }
   .cooper .introduce {
-    width: 650px;
+    width: 850px;
+    height: 300px;
+    overflow: auto;
     position: absolute;
     top: 403px;
     left: 50%;
@@ -703,18 +706,29 @@ h2 {
     -webkit-box-shadow: 1px 2px 6px #ccc;
             box-shadow: 1px 2px 6px #ccc;
     line-height: 2;
-    padding: 20px;
-    background: #0080DA;
+    background: url(/dist/img/cooperation/u1506.png) no-repeat center;
+    background-size: 850px 300px;
     color: #fff;
     border-radius: 4px; }
-    .cooper .introduce .desc {
-      margin-bottom: 30px; }
+    .cooper .introduce .innder-wrap {
+      position: relative;
+      padding: 20px 20px 20px 150px; }
+      .cooper .introduce .innder-wrap .hook {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        height: 170px;
+        width: 90px;
+        background: url(/dist/img/cooperation/u1445.png) no-repeat center;
+        background-size: 90px 170px; }
+        .cooper .introduce .innder-wrap .hook .desc {
+          margin-bottom: 30px; }
 
 .how-todo {
   position: relative;
   min-width: 1000px;
   line-height: 2;
-  margin-top: 229px;
+  margin-top: 204px;
   padding: 50px 0 150px;
   text-align: center;
   background: #EFF9FF; }
@@ -773,6 +787,10 @@ h2 {
         font-weight: normal; }
 
 .bg-bm {
+  background: url(/dist/img/cooperation/qudao_bg.png) no-repeat center;
+  background-size: cover; }
+
+.bg-zm {
   background: url(/dist/img/cooperation/qudao_bg.png) no-repeat center;
   background-size: cover; }
 
@@ -907,5 +925,18 @@ h2 {
 
 .ourfw {
   margin-top: 30px; }
+
+.more-box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 80px;
+  width: 220px;
+  height: 220px;
+  border-radius: 10px;
+  background: #4cb498;
+  color: #fff; }
+  .more-box .type {
+    font-size: 20px;
+    padding-bottom: 10px; }
 
 /*# sourceMappingURL=main.css.map */

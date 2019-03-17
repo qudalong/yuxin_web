@@ -2,7 +2,9 @@
 .cooper {
     position: relative;
     .introduce {
-        width: 650px;
+        width: 850px;
+        height: 300px;
+        overflow: auto;
         position: absolute;
         top: 403px;
         left: 50%;
@@ -10,12 +12,25 @@
         text-align: justify;
         box-shadow: 1px 2px 6px #ccc;
         line-height: 2;
-        padding: 20px;
-        background: #0080DA;
+        background: url(/dist/img/cooperation/u1506.png) no-repeat center;
+        background-size: 850px 300px;
         color: #fff;
         border-radius: 4px;
-        .desc {
-            margin-bottom: 30px;
+        .innder-wrap {
+            position: relative;
+            padding: 20px 20px 20px 150px;
+            .hook {
+                position: absolute;
+                top: 0;
+                left: 30px;
+                height: 170px;
+                width: 90px;
+                background: url(/dist/img/cooperation/u1445.png) no-repeat center;
+                background-size: 90px 170px;
+                .desc {
+                    margin-bottom: 30px;
+                }
+            }
         }
     }
 }
@@ -24,7 +39,7 @@
     position: relative;
     min-width: 1000px;
     line-height: 2;
-    margin-top: 229px;
+    margin-top: 204px;
     padding: 50px 0 150px;
     text-align: center;
     background: #EFF9FF;
@@ -99,6 +114,10 @@
 
 //报名
 .bg-bm {
+    background: url(/dist/img/cooperation/qudao_bg.png) no-repeat center;
+    background-size: cover;
+}
+.bg-zm {
     background: url(/dist/img/cooperation/qudao_bg.png) no-repeat center;
     background-size: cover;
 }
