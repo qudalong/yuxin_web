@@ -347,6 +347,8 @@ img {
     width: 1200px;
     margin: 0 auto;
     padding: 20px 0; }
+    .breadcrumb-wrap .breadcrumb .hone-icon {
+      vertical-align: bottom; }
     .breadcrumb-wrap .breadcrumb a {
       color: #666; }
       .breadcrumb-wrap .breadcrumb a.active {
