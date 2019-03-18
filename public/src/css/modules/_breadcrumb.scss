@@ -7,10 +7,11 @@
         margin: 0 auto;
         padding: 20px 0;
         .hone-icon{
-        vertical-align: bottom;
+        vertical-align: text-top;
         }
         a {
             color: #666;
+            font-size: 15px;
             &.active {
                 color: $brand-base; 
             }

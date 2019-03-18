@@ -29,6 +29,7 @@
 .p-gary {
     color: #666;
     line-height: 2;
+    font-size: 16px;
     .circle {
         display: inline-block;
         height: 8px;
@@ -134,10 +135,10 @@
             color: #fff;
             transition: top 0.5s;
             .type {
-                font-size: 20px;
+                font-size: 18px;
             }
             .intro {
-                font-size: 16px;
+                font-size: 15px;
             }
         }
         &:hover .desc {
