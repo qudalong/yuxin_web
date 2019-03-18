@@ -153,13 +153,19 @@ img {
         color: #fff;
         font-size: 14px;
         cursor: pointer; }
-        .head-wrap .head .r-wrap .login-btn:hover {
-          opacity: .8; }
 
 .gzh {
-  padding-left: 10px; }
-  .gzh img {
-    padding-right: 10px; }
+  padding-left: 10px;
+  margin-left: 7px;
+  border-left: 2px solid #4cb498;
+  cursor: pointer; }
+  .gzh .gzh-img {
+    padding-right: 6px;
+    -webkit-transition: all 2s;
+    transition: all 2s; }
+    .gzh .gzh-img:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
 
 .nav2 {
   display: none;
@@ -356,6 +362,9 @@ img {
 
 .comm-block-bg {
   color: #fff !important; }
+
+.banner-ul {
+  height: 680px !important; }
 
 .bg-dz {
   background: url(/dist/img/index/dingzhiyanfa_bg.png) no-repeat center;
@@ -680,18 +689,25 @@ h2 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
   .classify-list .center-wrap .scroll-img {
-    height: 595px;
-    width: 287px;
+    width: 242px;
+    height: 501px;
     position: relative;
     background: url(/dist/img/solution/food/shangjiaxianqging.png);
-    background-size: 287px 595px; }
+    background-size: 242px 501px; }
     .classify-list .center-wrap .scroll-img .inner {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 676px; }
-      .classify-list .center-wrap .scroll-img .inner img {
-        float: left; }
+      top: 16px;
+      left: 11px;
+      width: 219px;
+      height: 456px;
+      overflow: hidden; }
+      .classify-list .center-wrap .scroll-img .inner .inner-group {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 657px; }
+        .classify-list .center-wrap .scroll-img .inner .inner-group img {
+          float: left; }
 
 .cooper {
   position: relative; }

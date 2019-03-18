@@ -10,7 +10,7 @@
 	<!--头部-->
 	<% include ../../modules/header.ejs %>
 	<div class="banner-wrap">
-		<img src="/dist/img/solution/shopping/shangchengxiaochengxu_bg.png" height="500" />
+		<img src="/dist/img/solution/food/meishixiaochengxu_bg.png" height="500" width="100%" />
 	</div>
 	<% include ../../modules/breadcrumb.ejs %>
 	<!-- 分销商城小程序 -->
@@ -43,9 +43,11 @@
 			<div class="center-wrap">
 				<div class="scroll-img">
 					<div class="inner">
-						<img src="/dist/img/solution/food/shangjiaxianqging.png" />
-						<img src="/dist/img/solution/food/shangjiaxianqging.png" />
-						<img src="/dist/img/solution/food/shangjiaxianqging.png" />
+						<div class="inner-group">
+							<img src="/dist/img/solution/food/shangjiaxianqging_imgs.png" />
+							<img src="/dist/img/solution/food/shangjiaxianqging_imgt.png" />
+							<img src="/dist/img/solution/food/shangjiaxianqging_imgo.png" />
+						</div>
 					</div>
 				</div>
 			</div>
@@ -153,14 +155,14 @@
 <script type="text/javascript">
 	//
 	function scrollLeft() {
-		$('.inner').animate({
-				'left': '-190px'
+		$('.inner-group').animate({
+				'left': '-219px'
 			}, {
 				queue: true,
 				duration: 4000
 			})
 			.animate({
-				'left': '-380px'
+				'left': '-438px'
 			}, {
 				queue: true,
 				duration: 4000
@@ -172,6 +174,7 @@
 				duration: 0
 			});
 	}
+	scrollLeft();
 	setInterval(function() {
 		scrollLeft();
 	}, 8000);

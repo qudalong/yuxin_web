@@ -173,23 +173,30 @@
         top: 50%;
         left: 50%;
         overflow: hidden;
-        transform: translate(-50%,-50%); 
+        transform: translate(-50%, -50%);
         .scroll-img {
-            height: 595px; 
-            width: 287px;
+            width: 242px;
+            height: 501px;
             position: relative;
             background: url(/dist/img/solution/food/shangjiaxianqging.png);
-            background-size:287px 595px;
+            background-size: 242px 501px;
             .inner {
                 position: absolute;
-                top: 0;
-                left:0;
-                width: 676px; 
-                img{
-                    float: left;
+                top: 16px;
+                left: 11px;
+                width: 219px;
+                height: 456px;
+                overflow: hidden;
+                .inner-group {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 657px;
+                    img {
+                        float: left;
+                    }
                 }
             }
         }
     }
-    
 }

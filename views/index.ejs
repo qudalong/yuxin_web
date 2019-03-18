@@ -1,6 +1,6 @@
 <% include ./meta.ejs %>
-<meta name="keywords" content="童忆园,tongyiyuan,童忆学院,童忆园官网,宇信科技童忆园,童忆园下载,童忆园家长版,童忆园老师版,幼儿园,幼儿园管理,育儿教育,家园共育,家园沟通" />
-<meta name="description" content="童忆园致力于通过大数据及物联网技术,为幼儿园提供数字校园建设、知识校园建设、品牌校园建设一体化解决方案,帮助幼儿园解决管理、沟通、培训、招生等运营中的痛点,实现智能化管理,真正做到让园方更省心,让家长更放心。" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
 <title>
 	<%=title%>
 </title>
@@ -13,20 +13,19 @@
 	<div class="banner-home">
 		<ul class="banner-ul">
 			<li>
-				<img src="/dist/img/index/home_banner.png" width="100%" title="童忆园-智慧校园云平台" alt="构建全业务服务体系，助力幼儿园提升综合竞争力">
+				<img src="/dist/img/index/shouye_bg.png" height="680" width="100%">
 			</li>
 			<li>
-				<img src="/dist/img/index/home_banner.png" width="100%" title="童忆园-智慧校园云平台" alt="构建全业务服务体系，助力幼儿园提升综合竞争力">
+				<img src="/dist/img/index/shouye_bg.png" height="680" width="100%">
 			</li>
 		</ul>
-		<a href="javascript:void(0);" class="unslider prev unslider-l" title="童忆园-智慧校园云平台">
+		<a href="javascript:void(0);" class="unslider prev unslider-l" title="">
 			<img class="arrow" id="al" src="/dist/img/index/home_left_arrow_white.png" alt="prev" width="20" height="35">
 		</a>
-		<a href="javascript:void(0);" class="unslider next unslider-r" title="童忆园-智慧校园云平台">
+		<a href="javascript:void(0);" class="unslider next unslider-r" title="">
 			<img class="arrow" id="ar" src="/dist/img/index/home_Right_arrow_white.png" alt="next" width="20" height="37">
 		</a>
 	</div>
-	<!-- 教育行业 -->
 	<!-- 小程序制作 -->
 	<div class="comm-block pb30">
 		<div class="intro">
@@ -182,19 +181,17 @@
 <script src="/vendors/unslider.min.js"></script>
 
 <script type="text/javascript">
-	window.onresize = function () {
+	window.onresize = function() {
 		var imgH = $(".banner-home img").height();
 		$(".banner-home").css('height', imgH + 'px')
 
 	}
-	$(document).ready(function (e) {
-
-		//banner轮播
+	$(document).ready(function(e) {
 		var bannerHome = $('.banner-home').unslider({
 				dots: true
 			}),
 			data = bannerHome.data('unslider');
-		$('.unslider').click(function () {
+		$('.unslider').click(function() {
 			var fn = this.className.split(' ')[1];
 			data[fn]();
 		});
